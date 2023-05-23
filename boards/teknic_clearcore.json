@@ -3,7 +3,7 @@
     "arduino": {
       "ldscript": "flash_with_bootloader.ld"
     },
-    "core": "clearcore",
+    "core": "teknic",
     "cpu": "cortex-m4",
     "extra_flags": [
       "-DARDUINO_ARM_ClearCore",

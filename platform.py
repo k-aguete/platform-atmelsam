@@ -69,18 +69,18 @@ class AtmelsamPlatform(PlatformBase):
                 self.packages[framework_package]["optional"] = False
             self.packages["framework-cmsis"]["optional"] = False
             self.packages["framework-cmsis-atmel"]["optional"] = False
-            if build_core in ("tuino0", "reprap", "clearcore"):
+            if build_core in ("tuino0", "reprap", "teknic"):
                 self.packages["framework-cmsis-atmel"]["version"] = "~1.1.0"
             if build_core == "adafruit":
                 self.packages["toolchain-gccarmnoneeabi"]["version"] = "~1.90301.0"
-            if build_core in ("adafruit", "seeed", "clearcore"):
+            if build_core in ("adafruit", "seeed", "teknic"):
                 self.packages["framework-cmsis"]["version"] = "~2.50400.0"
-            if build_core == "clearcore":
+            if build_core == "teknic":
                 self.packages["toolchain-gccarmnoneeabi"][
                     "version"] = ">=1.40803.0,<1.40805.0"
 
         if (
-            board.get("build.core", "") in ("adafruit", "seeed", "sparkfun", "clearcore")
+            board.get("build.core", "") in ("adafruit", "seeed", "sparkfun", "teknic")
             and "tool-bossac" in self.packages
             and board.get("build.mcu", "").startswith(("samd51", "same51", "same53"))
         ):
