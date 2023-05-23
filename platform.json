@@ -61,6 +61,11 @@
       "owner": "platformio",
       "version": "~1.7.10"
     },
+    "framework-arduino-samd-clearcore": {
+      "type": "framework",
+      "optional": true,
+      "version": "https://github.com/Teknic-Inc/ClearCore-Arduino-wrapper.git"
+    },
     "framework-arduino-samd-seeed": {
       "type": "framework",
       "optional": true,
