@@ -64,7 +64,7 @@
     "framework-arduino-samd-clearcore": {
       "type": "framework",
       "optional": true,
-      "version": "https://github.com/Teknic-Inc/ClearCore-Arduino-wrapper.git"
+      "version": "git@github.com:k-aguete/ClearCore-Arduino-wrapper.git"
     },
     "framework-arduino-samd-seeed": {
       "type": "framework",
