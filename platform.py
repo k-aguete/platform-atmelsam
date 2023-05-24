@@ -78,7 +78,7 @@ class AtmelsamPlatform(PlatformBase):
             if build_core == "teknic":
                 self.packages["toolchain-gccarmnoneeabi"]["version"] = "~1.100301.0"
                 self.packages["framework-cmsis"]["version"] = "~2.50700.0"
-                # self.packages["framework-cmsis-atmel"]["version"] = "~1.3.0"
+                self.packages["framework-cmsis-atmel"]["version"] = "~1.2.0"
 
         if (
             board.get("build.core", "") in ("adafruit", "seeed", "sparkfun", "teknic")
