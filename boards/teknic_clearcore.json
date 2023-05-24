@@ -8,7 +8,8 @@
     "extra_flags": [
       "-DARDUINO_ARM_ClearCore",
       "-D__SAME53N19A__",
-      "-DDEBUG"
+      "-DDEBUG",
+      "-DIMPL_ITOA"
     ],
     "f_cpu": "120000000L",
     "hwids": [
