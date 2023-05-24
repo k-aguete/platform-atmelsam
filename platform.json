@@ -114,11 +114,7 @@
     "framework-cmsis-atmel": {
       "type": "framework",
       "optional": true,
-      "owner": "platformio",
-      "version": "~1.2.2",
-      "optionalVersions": [
-        "~1.1.0"
-      ]
+      "version": "git@github.com:k-aguete/ArduinoModule-CMSIS-Atmel.git"
     },
     "framework-arduino-mbcwb": {
       "type": "framework",
