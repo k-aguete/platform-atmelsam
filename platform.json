@@ -64,7 +64,7 @@
     "framework-arduino-samd-teknic": {
       "type": "framework",
       "optional": true,
-      "version": "git@github.com:k-aguete/ClearCore-Arduino-wrapper.git"
+      "version": "git@github.com:k-aguete/framework-arduino-samd-teknic.git"
     },
     "framework-arduino-samd-seeed": {
       "type": "framework",
