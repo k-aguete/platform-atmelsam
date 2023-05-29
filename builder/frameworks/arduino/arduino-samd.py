@@ -23,6 +23,7 @@ http://arduino.cc/en/Reference/HomePage
 """
 
 import os
+import json
 
 from SCons.Script import DefaultEnvironment
 
@@ -198,4 +199,5 @@ libs.append(env.BuildLibrary(
 env.Prepend(LIBS=libs)
 
 print("### <<< ARDUINO SAMD ENV >>> ###")
-print(env)
+print(json.dumps(env))
+

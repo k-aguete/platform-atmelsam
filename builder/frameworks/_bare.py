@@ -17,6 +17,7 @@
 #
 
 from SCons.Script import DefaultEnvironment
+import json
 
 env = DefaultEnvironment()
 board = env.BoardConfig()
@@ -90,4 +91,7 @@ if ("samd" in build_mcu) or ("samc" in build_mcu):
             "--specs=nano.specs"
         ]
     )
+
+print("### <<< BARE ENV >>> ###")
+print(json.dumps(env))
 

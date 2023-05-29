@@ -25,6 +25,7 @@ http://arduino.cc/en/Reference/HomePage
 import os
 
 from SCons.Script import DefaultEnvironment
+import json
 
 env = DefaultEnvironment()
 platform = env.PioPlatform()
@@ -120,3 +121,6 @@ if "build.usb_product" in board:
              board.get("vendor", "").replace('"', ""))
         ]
     )
+
+print("### <<< ARDUINO COMMON ENV >>> ###")
+print(json.dumps(env))
