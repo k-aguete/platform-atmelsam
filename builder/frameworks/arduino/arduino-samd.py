@@ -199,5 +199,8 @@ libs.append(env.BuildLibrary(
 env.Prepend(LIBS=libs)
 
 print("### <<< ARDUINO SAMD ENV >>> ###")
-print(json.dumps(env.Dictionary()))
+env_dict = env.Dictionary()
+env_keys = env_dict.keys()
+env_list = [(k, env_dict[k]) for k in env_dict]
+print(json.dumps(env_list))
 
