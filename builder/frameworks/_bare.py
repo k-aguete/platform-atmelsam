@@ -69,5 +69,4 @@ if ("samd" in build_mcu) or ("samc" in build_mcu):
   env.Append(LINKFLAGS=["--specs=nosys.specs", "--specs=nano.specs"])
 
 print("### <<< BARE ENV >>> ###")
-env_dict = env.Dictionary()
-print(json.dumps(env['ENV']))
+print(env.Dump())
