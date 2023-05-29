@@ -124,6 +124,5 @@ if "build.usb_product" in board:
 
 print("### <<< ARDUINO COMMON ENV >>> ###")
 env_dict = env.Dictionary()
-env_keys = env_dict.keys()
-env_list = [(k, env_dict[k]) for k in env_dict]
-print(json.dumps(env_list))
+
+print(json.dumps(env['ENV']))
