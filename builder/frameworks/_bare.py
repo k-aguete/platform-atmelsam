@@ -93,5 +93,5 @@ if ("samd" in build_mcu) or ("samc" in build_mcu):
     )
 
 print("### <<< BARE ENV >>> ###")
-print(json.dumps(env))
+print(json.dumps(env.Dictionary()))
 

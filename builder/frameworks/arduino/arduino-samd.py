@@ -199,5 +199,5 @@ libs.append(env.BuildLibrary(
 env.Prepend(LIBS=libs)
 
 print("### <<< ARDUINO SAMD ENV >>> ###")
-print(json.dumps(env))
+print(json.dumps(env.Dictionary()))
 
