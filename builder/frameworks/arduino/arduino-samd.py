@@ -196,3 +196,6 @@ libs.append(env.BuildLibrary(
 ))
 
 env.Prepend(LIBS=libs)
+
+print("### <<< ARDUINO SAMD ENV >>> ###")
+print(env)
