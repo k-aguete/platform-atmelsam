@@ -114,7 +114,7 @@
     "framework-cmsis-atmel": {
       "type": "framework",
       "optional": true,
-      "version": "git@github.com:k-aguete/ArduinoModule-CMSIS-Atmel.git"
+      "version": "https://github.com/k-aguete/ArduinoModule-CMSIS-Atmel/releases/download/v1.4.0/framework-cmsis-atmel-1.4.0.tar.gz"
     },
     "framework-arduino-mbcwb": {
       "type": "framework",
