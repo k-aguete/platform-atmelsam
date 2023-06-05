@@ -64,7 +64,7 @@
     "framework-arduino-samd-teknic": {
       "type": "framework",
       "optional": true,
-      "version": "git@github.com:k-aguete/framework-arduino-samd-teknic.git"
+      "version": "git@github.com:k-aguete/framework-arduino-samd-teknic.git#prebuilt-lib"
     },
     "framework-arduino-samd-seeed": {
       "type": "framework",
