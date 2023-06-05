@@ -72,12 +72,12 @@ class AtmelsamPlatform(PlatformBase):
             if build_core in ("tuino0", "reprap"):
                 self.packages["framework-cmsis-atmel"]["version"] = "~1.1.0"
             if build_core in ("adafruit", "teknic"):
-                self.packages["toolchain-gccarmnoneeabi"]["version"] = "~1.100301.0"
+                self.packages["toolchain-gccarmnoneeabi"]["version"] = "~1.100301.220327"
             if build_core in ("adafruit", "seeed"):
                 self.packages["framework-cmsis"]["version"] = "~2.50400.0"
             if build_core in ("teknic"):
-                #self.packages["framework-cmsis"]["version"] = "~1.40500.0"
-                self.packages["toolchain-gccarmnoneeabi"]["version"] = "~1.100301.0"
+                self.packages["framework-cmsis"]["version"] = "~1.40500.0"
+                self.packages["toolchain-gccarmnoneeabi"]["version"] = "~1.100301.220327"
                 # self.packages["framework-cmsis-atmel"]["version"] = "~1.2.0"
 
         if (
