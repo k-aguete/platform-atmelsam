@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:k-aguete/platform-atmelsam.git"
+    "url": "https://github.com/platformio/platform-atmelsam.git"
   },
   "version": "8.1.0",
   "frameworks": {
@@ -35,7 +35,7 @@
     "toolchain-gccarmnoneeabi": {
       "type": "toolchain",
       "owner": "platformio",
-      "version": "~1.100301.2",
+      "version": "~1.100301.0",
       "optionalVersions": [
         ">=1.40803.0,<1.40805.0",
         ">=1.60301.0,<1.80000.0",
@@ -65,7 +65,7 @@
     "framework-arduino-samd-teknic": {
       "type": "framework",
       "optional": true,
-      "version": "git@github.com:k-aguete/framework-arduino-samd-teknic.git#prebuilt-lib"
+      "version": "git@github.com:k-aguete/framework-arduino-samd-teknic.git#MP-prebuilt-lib"
     },
     "framework-arduino-samd-seeed": {
       "type": "framework",
