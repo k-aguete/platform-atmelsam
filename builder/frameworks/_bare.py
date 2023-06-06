@@ -57,7 +57,7 @@ env.Append(
         "-Wl,--warn-common",
         "-Wl,--warn-section-align"
     ],
-    LIBS=["m"],
+    LIBS=["c", "gcc", "m", "stdc++", "nosys"],
 )
 
 if "BOARD" in env:
