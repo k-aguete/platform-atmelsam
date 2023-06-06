@@ -77,7 +77,7 @@ class AtmelsamPlatform(PlatformBase):
                 self.packages["framework-cmsis"]["version"] = "~2.50400.0"
             if build_core in ("teknic"):
                 self.packages["framework-cmsis"]["version"] = "~1.40500.0"
-                self.packages["toolchain-gccarmnoneeabi"]["version"] = "~1.80201.0"
+                self.packages["toolchain-gccarmnoneeabi"]["version"] = "~1.50401.0"
                 # self.packages["framework-cmsis-atmel"]["version"] = "~1.2.0"
 
         if (
