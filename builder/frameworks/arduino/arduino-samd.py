@@ -173,7 +173,10 @@ if VENDOR_CORE in ("teknic"):
     env.Append(CPPPATH=[
         os.path.join(FRAMEWORK_DIR, "variants", "clearcore"),
         os.path.join(FRAMEWORK_DIR, "variants", "linker_scripts", "gcc"),
-        os.path.join(CMSIS_ATMEL_DIR, "CMSIS", "Device", "ATMEL", "same53", "include")
+        os.path.join(CMSIS_ATMEL_DIR, "CMSIS", "Device", "ATMEL", "same53", "include"),
+        os.path.join(FRAMEWORK_DIR, "cores", BUILD_CORE, "api", "deprecated"),
+        os.path.join(FRAMEWORK_DIR, "cores", BUILD_CORE, "api", "deprecated-avr-comp"),
+        os.path.join(FRAMEWORK_DIR, "cores", BUILD_CORE, "api"),
     ] + teknic_paths)
 
 if VENDOR_CORE == "moteino":
