@@ -151,6 +151,31 @@ if VENDOR_CORE in ("seeed", "adafruit", "moteino"):
 if VENDOR_CORE in ("adafruit", "seeed"):
     env.Append(CPPPATH=[os.path.join(CMSIS_DIR, "CMSIS", "DSP", "Include")])
 
+teknic_paths = []
+def listdirs(rootdir):
+    for it in os.scandir(rootdir):
+        if it.is_dir() and it.name in ("include"):
+            # print(it.path)
+            if not it.path in teknic_paths:
+                teknic_paths.append(it.path)
+        elif it.is_dir():
+            listdirs(it)
+        else:
+            try:
+                # print(rootdir.path)
+                if not rootdir.path in teknic_paths:
+                    teknic_paths.append(rootdir.path)
+            except Exception as e:
+                pass
+
+if VENDOR_CORE in ("teknic"):
+    listdirs(os.path.join(FRAMEWORK_DIR, "variants", "clearcore", "lib"))
+    env.Append(CPPPATH=[
+        os.path.join(FRAMEWORK_DIR, "variants", "clearcore"),
+        os.path.join(FRAMEWORK_DIR, "variants", "linker_scripts", "gcc"),
+        os.path.join(CMSIS_ATMEL_DIR, "CMSIS", "Device", "ATMEL", "same53", "include")
+    ] + teknic_paths)
+
 if VENDOR_CORE == "moteino":
     env.Append(
         CPPDEFINES=[
